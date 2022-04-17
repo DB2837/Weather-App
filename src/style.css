@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&family=Lobster&family=Oswald:wght@300;400&family=Teko:wght@300&display=swap");
+
 *,
 *::after,
 *::before {
@@ -8,4 +10,74 @@
 
 body {
   background-color: aqua;
+  font-size: 1.3rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.header {
+  display: grid;
+  place-content: center;
+  min-height: 80px;
+  background-color: black;
+  color: white;
+}
+
+.content {
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  width: 270px;
+  height: 32px;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+button {
+  height: 32px;
+  width: 36px;
+  background-color: rgb(31, 30, 30);
+  color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  min-height: 350px;
+  min-width: 320px;
+  background-color: rgb(31, 30, 30);
+  color: white;
+  margin-top: 30px;
+  box-shadow: 8px 7px 5px rgb(73, 72, 72);
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.info {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info > * {
+  margin: 9px;
 }
